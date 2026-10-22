@@ -24,7 +24,7 @@ public class EmailService {
     @Value("${app.mail.subject.deleted}")
     private String subjectDeleted;
 
-    private static final String BODY_CREATED = "Здравствуйте! Ваш аккаунт на сайте ваш был успешно создан!";
+    private static final String BODY_CREATED = "Здравствуйте! Ваш аккаунт на сайте ваш сайт был успешно создан!";
     private static final String BODY_DELETED = "Здравствуйте! Ваш аккаунт был удалён!";
 
     public void sendEmail(String email, Operation operation) {

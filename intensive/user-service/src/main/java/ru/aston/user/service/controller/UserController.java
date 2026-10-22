@@ -19,6 +19,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
+@RequestMapping("api/users")
 public class UserController {
 
     private final UserService service;
@@ -60,7 +61,7 @@ public class UserController {
     @Operation
             (summary = "Получить всех пользователей",
              description = "Метод возвращает всех существующих в БД пользователей")
-    @GetMapping("/users")
+    @GetMapping()
     public ResponseEntity<List<UserResponseDto>> getAllUsersById() {
         List<UserResponseDto> users = service.getAll();
 

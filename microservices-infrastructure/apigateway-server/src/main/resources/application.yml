@@ -15,18 +15,6 @@ spring:
           enabled: false
 
       routes:
-        - id: user-service-all
-          uri: lb://user-service
-          predicates:
-            - Path=/api/users
-            - Method=GET
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: userServiceCB
-                fallbackUri: forward:/fallback
-            - RewritePath=/api/users, /users
-
         - id: user-service
           uri: lb://user-service
           predicates:
@@ -36,8 +24,6 @@ spring:
               args:
                 name: userServiceCB
                 fallbackUri: forward:/fallback
-            - StripPrefix=2
-
         - id: notification-service
           uri: lb://notification-service
           predicates:
@@ -79,10 +65,12 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,circuitbreakers,circuitbreakerevents,gateway
+        include: health,info,gateway,circuitbreakers,circuitbreakerevents
   endpoint:
     health:
       show-details: always
+    gateway:
+      enabled: true
   health:
     circuitbreakers:
       enabled: true

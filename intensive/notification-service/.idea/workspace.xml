@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d326008-bf44-4893-8948-c2e8673e600e" name="Changes" comment="Fixed notification service 2">
+    <list default="true" id="1d326008-bf44-4893-8948-c2e8673e600e" name="Changes" comment="Fixed notification service 3">
       <change afterPath="$PROJECT_DIR$/../../.dockerignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/aston/notification/service/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/aston/notification/service/service/EmailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../microservices-infrastructure/apigateway-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../microservices-infrastructure/apigateway-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../microservices-infrastructure/config-repo/user-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../microservices-infrastructure/config-repo/user-service.yml" afterDir="false" />
     </list>
@@ -52,6 +51,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JUnit.NotificationServiceApplicationTests.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -116,7 +116,8 @@
       <updated>1792655761390</updated>
       <workItem from="1792694546822" duration="369000" />
       <workItem from="1792697609297" duration="562000" />
-      <workItem from="1792699441452" duration="31000" />
+      <workItem from="1792699441452" duration="106000" />
+      <workItem from="1792699593171" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed notification service">
       <option name="closed" value="true" />
@@ -134,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792697826455</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed notification service 3">
+      <option name="closed" value="true" />
+      <created>1792699539598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1792699539598</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +152,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed notification service" />
     <MESSAGE value="Fixed notification service 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed notification service 2" />
+    <MESSAGE value="Fixed notification service 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed notification service 3" />
   </component>
 </project>

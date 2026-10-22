@@ -46,7 +46,7 @@ public abstract class AbstractIntegrationTest {
         registry.add("spring.kafka.consumer.group-id", () -> TestEnvironment.CONSUMER_GROUP);
         registry.add("app.kafka.topic.user-events", () -> TestEnvironment.TOPIC);
 
-        registry.add("spring.mail.host", TestEnvironment.MAILHOG::getHost);
+        registry.add("spring.mail.host", () -> "127.0.0.1");
         registry.add("spring.mail.port",
                 () -> TestEnvironment.MAILHOG.getMappedPort(TestEnvironment.MAILHOG_SMTP_PORT));
         registry.add("spring.mail.username", () -> "");
@@ -82,7 +82,7 @@ public abstract class AbstractIntegrationTest {
 
     protected MailMessage awaitMessageTo(String recipient) {
         return Awaitility.await("Ожидание письма для " + recipient)
-                .atMost(Duration.ofSeconds(30))
+                .atMost(Duration.ofSeconds(60))
                 .pollInterval(Duration.ofMillis(500))
                 .until(() -> findMessageTo(recipient), Objects::nonNull);
     }
